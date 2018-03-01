@@ -1,8 +1,8 @@
 from . import *
 
-def Stokes(phi, D, U, rho=WATER_DENS, mu=WATER_DYN_VISC):
+def Stokes(phi, D, U, rho=WATER_DENS, mu=WATER_DYN_VISC, norm=False):
     """Return Stokes force"""
-    return 9.42477796076938 * mu * D * U
+    return 1 if norm else 9.42477796076938 * mu * D * U
 
 
 def Ergun(phi, D, U, rho=WATER_DENS, mu=WATER_DYN_VISC, norm=True):
