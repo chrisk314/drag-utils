@@ -14,9 +14,9 @@ def Reynolds(D, U, rho=WATER_DENS, mu=WATER_DYN_VISC):
     return rho * D * U / mu
 
 
-def Stokes(D, U, mu=WATER_DYN_VISC):
-    """Return Stokes force"""
-    return 9.42477796076938 * mu * D * U
+#def _Stokes(D, U, mu=WATER_DYN_VISC):
+#    """Return Stokes force"""
+#    return 9.42477796076938 * mu * D * U
 
 
 def calc_mean_diams(D):
